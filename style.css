@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: Tajawal, Cairo, Arial, sans-serif;
+    background: #fff7f9;
+    color: #3f0f1f;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 32px 18px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, .45), transparent 32%),
+        linear-gradient(135deg, #be123c, #fb7185);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.flower {
+    width: 112px;
+    height: 112px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .18);
+    border: 1px solid rgba(255, 255, 255, .25);
+    font-size: 58px;
+}
+
+.hero span {
+    padding: 9px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .16);
+    border: 1px solid rgba(255, 255, 255, .24);
+    font-weight: 900;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0;
+    font-size: clamp(18px, 2.4vw, 25px);
+    font-weight: 700;
+    line-height: 2;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 0;
+    font-size: clamp(42px, 9vw, 88px);
+    font-weight: 950;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+}
+
+.info {
+    min-height: 65vh;
+    padding: 70px 20px;
+    display: grid;
+    place-items: center;
+}
+
+.info-box {
+    width: min(100%, 820px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.info-box div {
+    min-height: 220px;
+    padding: 30px;
+    border-radius: 36px;
+    background: #fff;
+    border: 1px solid #ffe4e6;
+    box-shadow: 0 24px 70px rgba(190, 18, 60, .10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.info-box small {
+    color: #be123c;
+    font-weight: 900;
+}
+
+.info-box strong {
+    font-size: 24px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.closing {
+    min-height: 55vh;
+    padding: 70px 20px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, #be123c, #fb7185);
+}
+
+.closing h2 {
+    max-width: 760px;
+    margin: 0;
+    font-size: clamp(30px, 5vw, 56px);
+    line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+    .info-box {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 13vw, 58px);
+    }
+
+    .flower {
+        width: 94px;
+        height: 94px;
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "id": "royal-wedding",
+    "name": "دعوة زفاف ملكية",
+    "version": "1.0.0",
+    "html": "index.html",
+    "css": "style.css",
+    "fields": [
+        {
+            "label": "الأيقونة",
+            "required": true,
+            "type": "icon",
+            "options": [
+                {
+                    "label": "🌸",
+                    "value": "🌸"
+                },
+                {
+                    "value": "🎉",
+                    "label": "🎉"
+                },
+                {
+                    "label": "⭐",
+                    "value": "⭐"
+                },
+                {
+                    "label": "💐",
+                    "value": "💐"
+                }
+            ],
+            "defaultValue": "🌸",
+            "key": "icon"
+        },
+        {
+            "type": "text",
+            "required": true,
+            "label": "عنوان المناسبة",
+            "key": "title",
+            "maxLength": 60,
+            "defaultValue": "دعوة مناسبة"
+        },
+        {
+            "type": "textarea",
+            "label": "نص الدعوة",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 220,
+            "key": "message",
+            "defaultValue": "يشرفنا دعوتكم لحضور مناسبتنا"
+        },
+        {
+            "label": "أسماء أصحاب المناسبة",
+            "required": true,
+            "placeholder": "مثال: محمد",
+            "type": "names",
+            "separator": " و ",
+            "key": "names",
+            "maxItems": 10,
+            "minItems": 1
+        },
+        {
+            "required": true,
+            "label": "تاريخ المناسبة",
+            "type": "date",
+            "key": "date"
+        },
+        {
+            "key": "location",
+            "hint": "اضغط لاختيار الموقع من Google Map",
+            "type": "map",
+            "required": true,
+            "placeholder": "اختر الموقع من الخريطة",
+            "label": "الموقع"
+        },
+        {
+            "defaultValue": "حضوركم يسعدنا",
+            "minLength": 5,
+            "maxLength": 180,
+            "key": "closing",
+            "label": "رسالة الختام",
+            "required": true,
+            "type": "textarea"
+        }
+    ]
+}
