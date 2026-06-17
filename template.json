@@ -1,7 +1,7 @@
 {
-    "id": "royal-wedding",
-    "name": "دعوة زفاف ملكية",
-    "version": "1.0.0",
+    "id": "soft-event-html",
+    "name": "مناسبة ناعمة احترافية",
+    "version": "2.0.0",
     "html": "index.html",
     "css": "style.css",
     "fields": [
@@ -15,8 +15,8 @@
                     "value": "🌸"
                 },
                 {
-                    "value": "🎉",
-                    "label": "🎉"
+                    "label": "🎉",
+                    "value": "🎉"
                 },
                 {
                     "label": "⭐",
@@ -25,6 +25,14 @@
                 {
                     "label": "💐",
                     "value": "💐"
+                },
+                {
+                    "label": "🤍",
+                    "value": "🤍"
+                },
+                {
+                    "label": "✨",
+                    "value": "✨"
                 }
             ],
             "defaultValue": "🌸",
@@ -45,7 +53,7 @@
             "minLength": 10,
             "maxLength": 220,
             "key": "message",
-            "defaultValue": "يشرفنا دعوتكم لحضور مناسبتنا"
+            "defaultValue": "يشرفنا دعوتكم لحضور مناسبتنا ومشاركتنا أجمل اللحظات"
         },
         {
             "label": "أسماء أصحاب المناسبة",
@@ -72,7 +80,7 @@
             "label": "الموقع"
         },
         {
-            "defaultValue": "حضوركم يسعدنا",
+            "defaultValue": "حضوركم يسعدنا ويزيد مناسبتنا جمالًا",
             "minLength": 5,
             "maxLength": 180,
             "key": "closing",

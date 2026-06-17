@@ -1,40 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <main class="event-site">
-        <section class="hero">
-            <div class="flower">{{icon}}</div>
-            <span>{{title}}</span>
-            <p>{{message}}</p>
-            <h1>{{names}}</h1>
-        </section>
 
-        <section class="info">
-            <div class="info-box">
-                <div>
-                    <small>التاريخ</small>
-                    <strong>{{date}}</strong>
+        <section class="hero">
+            <div class="hero-bg">
+                <span class="orb orb-1"></span>
+                <span class="orb orb-2"></span>
+                <span class="orb orb-3"></span>
+
+                <span class="spark spark-1">✦</span>
+                <span class="spark spark-2">✧</span>
+                <span class="spark spark-3">✨</span>
+                <span class="spark spark-4">✦</span>
+            </div>
+
+            <div class="hero-card">
+                <div class="flower-wrap">
+                    <div class="flower">{{icon}}</div>
                 </div>
 
-                <div>
-                    <small>الموقع</small>
-                    <strong>{{location}}</strong>
+                <span class="event-label">{{title}}</span>
+
+                <p class="message">
+                    {{message}}
+                </p>
+
+                <div class="divider">
+                    <span></span>
+                    <i></i>
+                    <span></span>
+                </div>
+
+                <h1 class="names">
+                    {{names}}
+                </h1>
+
+                <div class="scroll-hint">
+                    <span>تفاصيل المناسبة</span>
+                    <b>↓</b>
                 </div>
             </div>
         </section>
 
-        <section class="closing">
-            <h2>{{closing}}</h2>
+        <section class="info">
+            <div class="section-title">
+                <span>موعد ومكان المناسبة</span>
+                <h2>نسعد بحضوركم ومشاركتكم فرحتنا</h2>
+            </div>
+
+            <div class="info-box">
+                <article class="info-card">
+                    <div class="card-icon">📅</div>
+                    <small>التاريخ</small>
+                    <strong>{{date}}</strong>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">📍</div>
+                    <small>الموقع</small>
+                    <strong>{{location}}</strong>
+                </article>
+            </div>
         </section>
+
+        <section class="closing">
+            <div class="closing-card">
+                <span class="closing-icon">{{icon}}</span>
+                <h2>{{closing}}</h2>
+                <p>حضوركم يكتمل به جمال المناسبة</p>
+            </div>
+        </section>
+
     </main>
 
 </body>
